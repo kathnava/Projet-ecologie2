@@ -1,0 +1,16 @@
+<%- include('./includes/header.ejs') %>
+<div class="Zoomensemble">
+<% if(locals.success) {  %>
+    <% if (success.attachement !="" ){ %>
+    <img src="/img/<%= success.attachement %>" class="imageZoom"alt="image">
+    <% } else { %>
+        <img id="image" style=" border-radius: 10px; height: 50px;"src="https://dummyimage.com/640x360/fff/aaa" class="imageZoom" alt="...">
+    <% } %>
+     <br>
+     <br>
+    <div class="Zoomtext ">
+        <p><%= success.createdAt %></p> 
+        <p><%= success.texte %></p> 
+    <% } %>
+    </div>
+</div>

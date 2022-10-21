@@ -1,0 +1,51 @@
+<%- include('./includes/header.ejs') %>
+    <div class="listeuser">
+        <% if( locals.user) { %>
+            <div class="team" style="margin-top:5%;margin-right:10%; margin-left: 10%">
+                <table class="table">
+                    <thead class="team" style="margin-top:5%; margin-right:10%; margin-left: 10%; width: 100%">
+                        <tr class="disparu">
+                            <th>Id</th>
+                            <th>Nom</th>
+                            <th>Prénom</th>
+                            <th>Email</th>
+                            <th style="color:red">Suppression</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bodyconfig">
+                        <% for (var i=0; i<locals.user.length; i++ ) { %>
+                            <tr class="listeenvertical">
+                                <td class="cache">
+                                    <%= locals.user[i].id %>
+                                </td>
+                                <td>
+                                    <%= locals.user[i].nom %>
+                                </td>
+                                <td>
+                                    <%= locals.user[i].prenom %>
+                                </td>
+                                <td>
+                                    <%= locals.user[i].email %>
+                                </td>
+                                <td>
+                                    <form action="/lesutilisateurs/<%= locals.user[i].id %>" method="post">
+                                        <input type="hidden" name="_method" value="DELETE">
+                                        <button type="submit" class="btn btn-danger"onClick= 'return confirm("Voulez-vous vraiment supprimer cet utilisateur ?")'>Suppression</button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <% } %>
+                            
+                    </tbody>
+                
+                </table>
+                <div>
+                    <a href="./profil"><button type="button" class="btn btn-primary btn-lg button1 btn5">Retour au Profil</button></a>
+                </div>
+                <div>
+                    <a href="./admin"><i class='fas fa-arrow-circle-left' style='font-size:48px;color:red; margin-left: 10%'></a></i>
+                </div>
+            </div>
+            
+            <% } %>         
+    </div>

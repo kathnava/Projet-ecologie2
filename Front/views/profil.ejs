@@ -1,0 +1,50 @@
+<!-- <%- include('./includes/header.ejs') %> -->
+<%- include('./includes/Nouveau.ejs') %>
+  <% console.log(locals); %>
+    <main class="container">
+        <div class="album">
+          <div id="form3">
+            <% locals.post.success.reverse().map((post)=>{ %>
+              <% if(post.userId===locals.me.id){ %>
+                <div class="card-group">
+                  <div class="card">
+                    <% if (post.attachement !="" ){ %>
+                      <img id="image" style=" border-radius: 10px; height: 200px;" src="/img/<%= post.attachement %>"
+                        class="img-fluid H-50% W-50%" alt="...">
+                      <% } else { %>
+                        <img id="image" style=" border-radius: 10px; height: 200px;"
+                          src="https://dummyimage.com/640x360/fff/aaa" class="img-fluid H-50% W-50%" alt="...">
+                        <% } %>
+                          <div class="card-body">
+                            <h5 class="card-title courtprofil">
+                              <%= post.texte %>
+                            </h5>
+                          </div>
+                          <form action="/profil/put/<%= post.id %>" method="post" class=" textA">
+                            <textarea name="texte" class="form-control " aria-label="Sizing example input"
+                             aria-describedby="inputGroup-sizing-default" placeholder="Mettre votre message"  autofocus> Modifier le texte
+                            </textarea>
+                            <br>
+                            <br>
+                            <input class="form-control form-control-sm" id="formFileSm " type="file" name="attachement">
+                            <br>
+                            <br>
+                            <button type="submit" class="btn btn-primary btn-sm but3">Valider le nouveau post</button>
+                            </a>
+                          </form>
+                  </div>
+                </div>
+                <% } %>
+                  <% }) %>
+          </div>
+          <hr>
+        </div>
+      </div>
+      </div>
+      <br>
+      <br>
+      </div>
+      </div>
+    </main>
+    </body>
+    </html>

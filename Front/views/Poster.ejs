@@ -1,0 +1,35 @@
+<!-- <%- include('./includes/header.ejs') %> -->
+<%- include('./includes/ModifProfil.ejs') %>
+<div class="ensembledepage">
+  <div class="DECO">
+    <img src="/img/bonhomme.jpg" style="width:65%; margin-left: 5%; margin-top: 10%;" alt="...">
+  </div>
+  <div class="encadre">
+    <div class="profilretour">
+      <div>
+        <a href="/profil" id="Pro"><i class="fas fa-user-alt" style="font-size: 50px; margin-left: 2%; margin-top: 2% ;color:red"></i></a>
+      </div>
+      <div>
+        <h2 class="posterunarticle">Poster un article</h2>
+      </div>
+      <hr>
+    </div>
+    <form action="/profil/newpost" method="post" onctype="multipart/form-data" id="posterpost">
+      <div class="input-group mb-3 TA">
+        <textarea name="texte" class="form-control " aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-default" placeholder="Mettre votre message"  autofocus>
+        </textarea>
+      </div>
+      <div class="mb-3">
+        <label for="formFile" class="form-label"></label>
+        <input class="form-control ajoutphotp" id="#" type="file" name='attachement' id="formFile">
+      </div>
+      <br>
+      <div class="BUTTONA">
+        <button class="btn btn-primary buttonpublier" type="submit">Publier</button>
+        <br>
+      </div>
+      <br>
+    </form>
+  </div>
+</div>

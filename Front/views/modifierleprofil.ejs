@@ -1,0 +1,46 @@
+<%- include('./includes/ModifProfil.ejs') %>
+<% console.log(locals); %> 
+  <nav>
+    <% if(locals.me){ %>
+      <ul class="list-group list-group-flush" id="profile">
+        <li class="list-group-item">Nom : <%= locals.me.nom %>
+        </li>
+        <li class="list-group-item">Prénom : <%= locals.me.prenom %>
+        </li>
+        <li class="list-group-item">E-mail : <%= locals.me.email %>
+        </li>
+      </ul>
+      <% } %>
+  </nav>
+    <div class="cadre">
+      <div class="Equilibre">
+      <div class="imagemodifprofil">
+        <img src="/img/modifprofil.jpg" style="width:100%;" alt="...">
+      </div>
+      <div class="Prepartie">
+      <div class="RetourP">
+         <a href="/profil"><i class="fas fa-user-alt profilicone" style="font-size: 50px; margin-right: 10%; margin-top: 20% ;color:red"></i></a>
+      </div>
+      <div class="profilretour">
+        <h3 class="Modifierlescoord">Modifier vos coordonnées </h3>
+        <hr>
+      </div>
+    <form action="/profil/update" method="post" id="PR">
+      <div class="input-group mb-3">
+        <input type="text" name="nom" class="form-control" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-default" placeholder="Mettre votre nom" autofocus>
+      </div>
+      <div class="input-group mb-3">
+        <input type="text" name="prenom" class="form-control" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-default" placeholder="Mettre votre prenom" autofocus>
+      </div>
+      <div class="GB">
+        <br>
+        <button class="btn btn-primary" id="GBB" type="submit" value="Enregistrer" >Enregistrer</button>
+      </div>
+      <br>
+    </form>
+  </div>
+</div>
+</div>
+</div>

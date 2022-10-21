@@ -1,0 +1,1771 @@
+* {
+    box-sizing: border-box;
+}
+.tester {
+    display: flex;
+    flex-direction: row!important;
+    flex-wrap: wrap;
+}
+
+/* .partie1{
+    margin-top: 5%;
+} */
+
+.TORTUE {
+    margin-left: 4%;
+}
+
+.row1 {
+    margin-top: 5%;
+}
+
+.GB {
+    width: 100%;
+}
+
+#GBB {
+    width: 100%;
+}
+
+.blocked {
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    width: 100%;
+}
+
+.Equilibre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.ToutEnsemble {
+    width: 80%;
+    display:flex ;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+}
+
+.imagemodifprofil3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    width: 50%;
+    background-color: grey;
+}
+
+#Pro {
+    margin-left: 40%;
+}
+
+.background {
+    /* background-image: url('/img/nuage.jpg'); */
+    background-color: #ccc;
+} 
+
+.Prepartie {
+    display: flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.textHome{
+    width: 50%;
+}
+
+.formLogIn {
+    width: 50%;
+    background-color:#EBE9E9;
+    padding-top: 20px;
+    border-radius: 10px;
+    height: 400px;
+}
+
+.inscrit a {
+    margin-bottom: 20px;
+    text-decoration:underline;
+    color: blue;
+}
+
+#but {
+    margin-bottom: 20px;
+}
+
+.DECO {
+    margin-top: 5%;
+}
+
+#retour {
+    margin-top: 30px;
+}
+
+.deux {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+#carouselExampleControls {
+    width: 100%;
+}
+
+.formLogIn {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+#titre { 
+  margin-left: 100px;
+}
+
+#but1 {
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.card {
+    flex-direction: column;
+    background-color:#EBE9E9;
+    border-radius: 10px;
+}
+
+.textHome text-end {
+    flex-direction: column;
+    margin-left: 60px;
+}
+
+.cadre {
+    /* background-color:#EBE9E9; */
+    padding: 20px;
+    border-radius: 10px;
+    border: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #cccccc; 
+    margin-top: 5%;
+    
+}
+
+.card-img-top {
+    border-radius: 10px;
+    margin-top: 10px;
+   
+}
+
+.list-group, list-group-flush {
+    border-radius: 10px;
+}
+
+.card-body {
+    margin-left: 3%;
+    margin-bottom: 10%;
+}
+
+.textA {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-group {
+    /* border: 5px solid #ccc; */
+    border-radius: 10px;
+    box-shadow: #ccc;
+    box-shadow: -8px 8px 20px -9px rgba(186,175,175,0.76);
+    -webkit-box-shadow: -8px 8px 20px -9px rgba(186,175,175,0.76);
+    -moz-box-shadow: -8px 8px 20px -9px rgba(186,175,175,0.76);
+    width: 25%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.btn, btn-primary btn-lg {
+    margin-bottom: 20px;
+}
+
+.card-title {
+    margin-left: 40px;
+}
+
+.d-block, w-100 {
+    border-radius: 10px;
+}
+
+.col-auto {
+    background-color:#A9D0F5 ;
+    height: 70px;
+    text-align: center;
+    padding: 15px;
+}
+
+.card-link {
+    margin-left: 30px;
+}
+
+/* .container-fluid  {
+    margin-left: 200px;
+} */
+
+.btn btn-primary {
+    /* margin-left: 3px; */
+}
+
+.erreur-message {
+    display: inline ;
+    color:#ff5b5b;
+    display: none;
+}
+
+.toto {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  animation: mymove 5s infinite;
+  animation-delay: 2s;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+
+#test {
+    animation: glowing 5s infinite;
+    /* margin-left: 100px; */
+}
+@keyframes glowing {
+    0% {
+      background-color: #2ba805;
+      box-shadow: 0 0 5px #2ba805;
+    }
+    50% {
+      background-color: #49e819;
+      box-shadow: 0 0 20px #49e819;
+    }
+    100% {
+      background-color: #2ba805;
+      box-shadow: 0 0 5px #2ba805;
+    }
+}
+
+
+#save, #annuler { 
+    background-color:#5A95EE;
+    color: white;
+}
+
+
+.form-control1 {
+    width: 50%;
+    margin-left: 30px;
+}
+
+.form-control {
+    width:40%;
+}
+
+#con {
+    font-size: 15px;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+.partie1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    width: 100%;
+    background-color: #f8f8f8;
+    margin-top: 10%;
+}
+
+.mileu{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:#EBE9E9;
+    border-radius: 5px;
+    margin:5% 5% 8% 5%;
+    /* width: 40%; */
+}
+
+
+
+
+
+.fa fa-thumbs-up {
+    font-size: 100px;
+    cursor: pointer;
+    user-select: none;
+}
+  
+.fa:hover {
+    color: darkblue;
+}
+ 
+.fa:hover {
+    color: darkblue;
+}
+
+.button {
+    border: none;
+    color: black;
+    background-color: #EBE9E9;
+   
+}
+
+.ICO p{
+    margin-right: 3px;
+    margin-top: 10px;
+}
+
+#result {
+    margin-left : 30px;
+}
+
+#result1 {
+    margin-left: 30px;
+}
+
+.fa p {
+    font-size: 8px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    width: 100%;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form-control {
+    width: 90%;
+}
+
+.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    margin-left: -20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#navbarNav
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.dropdown {
+    width: 40%;
+}
+
+#barre {
+    margin-left: 90px;
+}
+
+#in {
+    width: 90%;
+}
+
+.form-inline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 20%;
+    margin-right: 20px;
+}
+
+.deuxpages {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.formLogIn {
+    width: 50%;
+    padding: 20px;
+    height: 400px;
+}
+
+.Aqua {
+    width: 100%;
+    height: 500px;
+    
+}
+
+.ph {
+    border-radius: 10px;
+    height: 400px;
+    width: 50%;
+}
+
+.ajoutphotp{
+    width: 50%;
+}
+
+
+#Publier {
+    background-color: #5A95EE;
+    /* width: 13%; */
+    /* height: 18%; */
+    color: white;
+    border: none;
+    font-size: 1rem;
+    vertical-align: middle;
+    padding: .375rem .75rem;
+    margin-top: 1rem;
+}
+
+
+
+/* .album {
+    margin-top: 5%;
+} */
+
+/*le button pour modifier image*/
+
+#Publier1 {
+    background-color: #5A95EE;
+    width: 15%;
+    height: 15%;
+    color: white;
+    border: none;
+    font-size: 20px;
+    vertical-align: middle;
+    /* padding: .375rem .75rem; */
+}
+
+.nom {
+    margin-left: 20px;
+}
+
+.ide {
+    /* margin-left: 20px; */
+}
+
+.card-img-top {
+    object-fit: cover;
+}
+
+.total {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-bottom: 25px;
+ 
+}
+
+/* .deux {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+} */
+
+.col {
+    width: 50%;
+    flex: none;
+}
+
+.col-md-3 {
+    width: 50%;
+}
+
+.card-img-top {
+    margin-top : 0px;
+}
+
+.card-title {
+    margin-left: 0px;
+}
+
+#but {
+    margin-bottom: 0;
+    margin-top: 40%;
+    margin-left: 10%;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+#touche {
+    margin-left: 100px;
+}
+
+
+.btn-group button {
+    background-color: #0d6efd; /* Green background */
+    border: 2px solid blue; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 90%; /* Set a width if needed */
+    display: block; /* Make the buttons appear below each other */
+}
+    
+.btn-group button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+}
+
+    
+   
+.btn-group button:hover {
+    background-color: #3e8e41;
+}
+
+#form1 {
+    display: none;
+}
+
+#form2 {
+    display: none;
+}
+
+/* #form3 {
+    display: none;
+   
+} */
+
+.album {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    width: 100%;
+}
+
+
+/* .container, .container-sm {
+    max-width: none; 
+} */
+
+
+.navbar-toggler {
+    display: flex;
+}
+
+#form3 {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 10%;
+}
+
+.card-img-top img {
+    object-fit: cover;
+}
+
+.card-text {
+    font-size: 10px;
+}
+
+#but1 {
+    width: 60%;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-fluid {
+    object-fit: cover;
+}
+
+.navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+    gap: 5%;
+}
+
+#profile {
+    margin-top: 25px;
+}
+
+#IDLIKE {
+    margin-left:25px;
+    display: flex;
+    flex-direction: row;
+}
+
+#IDDISLIKE {
+    margin-left:25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.MP {
+    border: 1px solid;
+    border-radius: 2%;
+    margin: auto;
+    width: 50%;
+    margin-top: 20%;
+    box-shadow: 10px 10px 10px 10px #e3e3e3;
+}
+
+
+
+.input-group>.form-control, .input-group>.form-select {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+}
+
+.MOPR {
+    /* margin-left: 450px;
+    margin-top: 200px;
+    background-image: url("requingeant.jpg");
+    border: #0d6efd 2px; */
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+#PR {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+
+
+.posterpost {
+    width: 80%;
+    height: auto;
+    margin-left:50px;
+    margin-right: 50px;
+}
+
+#coeur:focus {
+  color: red;
+
+}
+
+button {
+    border: none;
+    background: transparent;
+}
+
+button:hover{
+    border: none;
+    background: transparent;
+    color: red;
+}
+
+
+.buttonpublier {
+    width: 50%;
+}
+
+.ensembledepage {
+    display: flex;
+    flex-direction: row;
+    padding: 5% 5% 5% 5%;
+   
+}
+
+.encadre {
+    border:2px blue;
+    background-color: #e3e3e3;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+
+
+#form3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-around;
+    margin-top: 10%;
+}
+
+#MyProfilIcon {
+    font-size: 30px;
+    background: red;
+    animation: mymove 5s infinite;
+}
+@keyframes mymove {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+.Commande {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5%;
+    align-items: center;
+    margin-top: 5%;
+}
+
+#Commandes {
+    margin-top: 2%;
+    align-items: center;
+    text-align: center;
+}
+
+.HR {
+    margin-bottom: 2%!important;
+    margin-top: 2%!important;
+    height: 5px!important;
+    border-width: 0!important;
+    color:gray!important;
+    background-color:gray!important;
+}
+
+.hr {
+    display: none;
+}
+
+.button1 {
+    margin-left: 40%;
+    margin-top: 5%;
+    width: none;
+}
+
+.button2 {
+    margin-top: 5%;
+}
+
+/* .encadre {
+    margin-left: 10%;
+} */
+
+.ajoutphotp {
+    width: 90%;
+}
+
+#ajouttexte {
+    width: 80%;
+}
+
+.input1 {
+    width: 90%;
+}
+
+textarea {
+    /* resize: none; */
+}
+
+.but3 {
+    margin-bottom: 10%;
+}
+
+.ICO {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.posterunarticle {
+    justify-items: center;
+    text-align: center;
+    color: blue; 
+    margin-top: 10%;
+}
+
+.Modifierlescoord {
+    justify-items: center;
+    text-align: center;
+    color: blue;
+}
+
+
+.SousMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    justify-items: center;
+    justify-self: center;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.overflow-string {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    
+
+}
+
+
+#image {
+    width: 100%;
+}
+
+.court {
+    white-space: nowrap; 
+    width: 200px; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    /* border: 1px solid #000000; */
+}
+
+.courtprofil {
+    white-space: nowrap; 
+    width: 200px; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    /* border: 1px solid #000000; */
+}
+  
+
+.imageZoom {
+    width: 90%;
+}
+
+.Zoomensemble {
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+
+.Zoomtext {
+    padding: 5%;
+    background-color:#ccc;
+    /* margin-bottom: 5%; */
+    margin: 0% 5% 5% 5%;
+}
+
+.deuxparties {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ccc;
+    border-style: solid ;
+    border-color: #0d6efd;
+    border-width: 5px;
+}
+
+.Commande {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5%;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.deuxbutAdmin {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+/* .PP {
+    display: flex;
+    flex-direction: column;
+} */
+.butDelete {
+    margin-bottom: 30%;
+    text-align: center;
+    
+}
+
+.espaceFormulaire {
+    width: 100%;
+    padding : 5% 5% 5% 5%;
+}
+
+.titrekn {
+    text-align: center;
+}
+
+.divbut {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.profilretour {
+    margin-top: 5%;
+}
+
+.column h1 {
+    margin-left: 4%;
+    margin-top: 5%;
+}
+
+.AdminBout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+@media screen and (max-width:1080px) and (min-width:768px) {
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.placeholder-wave {
+    display: none;
+}
+
+.placeholder-glow {
+   display: none;
+}
+
+#carouselExampleControls {
+    display: none;
+}
+
+.placeholder-wave {
+    display: none;
+}
+
+.ph {
+    display: none;
+}
+
+.blockquote-footer {
+    display: none;
+}
+
+.textHome {
+    margin-left: none;
+}
+
+.formLogIn {
+    padding: 20px;
+    height: auto;
+}
+
+#in {
+    width: 95%;
+}
+
+/* .mb-3 {
+   
+    margin-left: 10px;
+} */
+
+.btn, btn-primary {
+
+    width: 90%;
+    
+}
+
+.btn5 {
+    width: 40%!important;
+}
+
+
+
+#mot {
+    margin-left: 3%;
+}
+
+.inscrit {
+    /* margin-left: 3%; */
+}
+
+h3 {
+    margin-right :120px;
+
+
+}
+
+.formLogIn {
+    height: auto;
+    width: 100%;
+}
+
+/* .container, .container-sm {
+    max-width: none; 
+}
+
+.dropdown-content a {
+    display: none;
+}
+
+.navbar-toggler {
+    display: inline-block;
+} */
+
+
+/* .navbar-nav {
+    
+    flex-direction: row;
+}
+
+#navbarNav {
+    display: none;
+} */
+
+
+H1 {
+    /* margin-right: 15%; */
+    margin-top: 20%;
+}
+
+/* #partie1 {
+    display: flex;
+    flex-direction: column;
+} */
+
+/* .Card {
+    max-width: 70rem !important;
+    margin-bottom: 150px;
+} */
+
+/* #card-home {
+    margin-bottom: 150px!important;
+} */
+
+.card {
+   width: none;
+   
+}
+
+.total {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+  
+}
+
+.partie1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20%;
+   
+    
+}
+
+#Menutete {
+    margin-bottom: 40px;
+}
+
+#image {
+    border-radius: 10px;
+    height: 25rem!important;
+    width: 50rem!important;
+    /* object-fit: cover; */
+}  
+
+
+.MOPR {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.ajoutphotp {
+    width: 90%;
+}
+
+#ajouttexte{
+    width: 80%;
+}
+
+
+.encadre {
+    border:2px blue;
+    background-color: #e3e3e3;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    /* margin-top: 10%; */
+}
+
+.ICO {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.card-group {
+    margin-bottom: 1%;
+    width: 40%;
+   
+}
+
+.cadre {
+  
+    width: 100%;
+}
+
+.titrekn {
+    text-align: center;
+}
+
+.form2 {
+    padding-left: 10%;
+    padding-top: 5%;
+}
+
+.DECO {
+   margin-top: 10%;
+}
+
+.imagemodifprofil {
+    display: none;
+}
+.AdminBout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.imagemodifprofil3 {
+    display: none;
+}
+
+.ToutEnsemble {
+    width: 100%;
+}
+.deuxparties {
+    width: 100%;
+}
+.btn2 {
+    width: 100%;
+}
+.PP {
+    width: 100%;
+}
+
+.GB {
+    width: 90%;
+}
+
+#PR {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.listeuser {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.deuxpages {
+    margin-top: 10%;
+}
+
+#aretirer {
+    display: none;
+}
+
+#ARETIRER1 {
+    display: none;
+}
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    .placeholder-wave {
+        display: none;
+    }
+    .placeholder-glow {
+       display: none;
+    }
+    #carouselExampleControls {
+        display: none;
+    }
+    .placeholder-wave {
+        display: none;
+    }
+    .ph {
+        display: none;
+    }
+    .blockquote-footer {
+        display: none;
+    }
+    .textHome {
+        margin-left: none;
+    }
+    .formLogIn {
+        padding: 20px;
+    }
+    #in {
+        width: 95%;
+    }
+
+    /* .mb-3 {
+       
+        margin-left: 10px;
+    } */
+
+    .btn, btn-primary {
+        width: 92%;
+        margin-left: 3%;
+    }
+    
+    
+
+    .bodyconfig {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .cache {
+        display: none;
+    }
+
+    
+
+    #mot {
+        margin-left: 3%;
+    }
+    .inscrit {
+        margin-left: 3%;
+        font-size: 14px;
+    }
+    .text-end h3 {
+        margin-left: 5%;
+        font-size: 18px;
+    }
+    #titre {
+         margin-left: 10px; 
+    }
+    .formLogIn {
+        height: auto;
+        width: 100%;
+    }
+    .container {
+        position: relative;
+        /* display: inline-block; */
+        width: 100%;
+    }
+    /* .navbar-nav {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .navbar-nav a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .navbar-nava:hover {background-color: #ddd;}
+      
+    .container:hover .navbar-nav{display: block;}
+      
+    .container:hover .dropbtn {background-color: #3e8e41;} 
+
+
+
+.container, .container-sm {
+    max-width: none; 
+}  */
+
+/* .dropdown-content a {
+    display: none;
+}  
+
+.navbar-toggler{
+    display: inline-block; 
+} 
+
+ #navbarNav {
+    display: inline-flex; 
+}  */
+
+
+.card img {
+    border-radius: 10px;
+    height: 200px;
+
+}
+
+.trois {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: center;
+    gap: 10px;
+    margin-left: 8%;
+    width: 100%;
+}
+
+.btn-group button {
+    width: 50%;
+    justify-items: center;
+    display: flex;
+    justify-content: center;
+}  
+
+
+.album {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#image {
+    border-radius: 10px;
+    height: 400px;
+    width: 800px;
+    /* object-fit: cover; */
+}   
+
+.btn-group button {
+    width: 65%;
+    justify-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+H1 {
+    margin-right: 10%;
+    margin-top: 2%;
+}
+
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    margin-left: 3%;
+}
+
+#annuler  {
+   display: none;
+}
+
+#card-home {
+    max-width: 40rem !important;
+}
+
+.card {
+    width: none;
+}
+
+#but {
+    margin-top: 30%;
+    margin-left: none !important;
+}
+
+.btn btn-primary {
+    margin-left: none !important;
+}
+
+.partie1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 25%; */
+   
+}
+
+
+.card-group {
+    margin-bottom: 10px!important;
+    width: 100%;
+   
+}
+
+
+#Menutete {
+    margin-bottom: 40px;
+}
+
+.ICO {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    justify-items: center;
+}
+
+#IDLIKE {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#IDDISLIKE {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; 
+}
+
+
+.MOPR {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   
+}
+
+.MenuRes {
+    width: 14rem;
+}
+
+
+.card-group>.card {
+    margin-bottom: none!important;
+}
+
+.Modifierlescoord {
+    font-size: 15px;
+}
+
+
+.cadre {
+  
+    width: 100%;
+}
+
+
+.posterunarticle {
+    font-size: 20px;
+}
+
+.encadre {
+    width: 100%;
+    margin-top: 20%;
+  
+}
+
+#Pro {
+    margin-left: 40%;
+}
+
+.ajoutphotp {
+    width: 90%;
+}
+
+
+.Commande {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5%;
+    align-items: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.AdminBout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+.row {
+    display: flex;
+    flex-wrap: none;
+    flex-direction: column;
+}
+
+.col {
+    width: 95%;
+}
+
+.col-md-3 {
+    width: 95%;
+}
+
+.label1 {
+    margin-left: 3%;
+}
+
+.divbut {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.label1 {
+    margin-left: 3%;
+}
+
+#exampleInputEmail1 {
+    width: 92%;
+}
+
+.labe2 {
+    margin-left: 3%;
+}
+
+#emailHelp {
+    margin-left: 3%;
+}
+
+#ser {
+    display: flex;
+    flex-direction: row;
+    margin-left: 4%;
+}
+
+#exampleInputPassword1 {
+    width: 92%;
+}
+
+.DECO {
+    display: none;
+}
+
+.input-group {
+    width: 100%;
+}
+
+.imagemodifprofil {
+    display: none;
+}
+
+.imagemodifprofil3 {
+    display: none;
+}
+
+.ToutEnsemble {
+    width: 100%;
+}
+
+.deuxparties {
+    width: 100%;
+}
+
+.btn2 {
+    width: 100%;
+}
+.PP {
+    width: 100%;
+}
+
+#Commandes {
+    font-size: 20px;
+}
+
+.btn {
+    font-size: 1rem;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    font-size: 1rem;
+}
+
+.MenuRes {
+    width: 10rem;
+}
+
+
+
+.MenuRes i {
+    display: none;
+}
+
+.MenuRes a {
+    font-size: 12px;
+}
+
+.container{
+    margin-top: 10%;
+}
+
+
+#PR {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.GB {
+    width: 90%
+}
+
+
+
+.listeuser {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.bodyconfig {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.listeenvertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+   
+   
+}
+
+#button9 {
+    font-size: none;
+}
+
+.disparu {
+    display: none;
+}
+
+.deuxpages {
+    margin-top: 5%;
+}
+
+#form3 {
+    margin-top: 20%;
+}
+
+.ensembledepage {
+    display: flex;
+    flex-direction: row;
+    padding: 5% 5% 5% 5%;
+   
+}
+
+#posterpost {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.TA {
+    width: 90%;
+}
+
+.BUTTONA {
+    width: 80%;
+}
+
+.RetourP {
+    margin-top: 10%;
+}
+
+.navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+    gap: 10%;
+}
+
+#aretirer {
+    display: none;
+}
+
+/* #ARETIRER1 {
+    display: none;
+} */
+
+}
+
+
+
+

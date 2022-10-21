@@ -1,0 +1,59 @@
+
+<%- include('./includes/header.ejs') %>
+  <%console.log('----------recuperer dans home', locals.post.success) %>
+    <main class="container">
+      <div class="total">
+        <div class="partie1">
+          <% locals.post.success.map( ( user)=> { %>
+            <% user.Posts.map( ( post)=> { %>
+              <% if(post.userId===user.id) { %>
+                <div class="card-group">
+                  <div id="largeur" class="card">
+                    <% if (post.attachement !="" ){ %>
+                      <a href="/ZoomPost/<%= post.id %>"> <img id="image" style=" border-radius: 10px; height: 200px;"
+                          src="/img/<%= post.attachement %> " class="img-fluid  H-50% W-50%" alt="image" />
+                      </a>
+                      <% } else { %>
+                        <a href="/ZoomPost/<%= post.id %>"> <img id="image" style=" border-radius: 10px; height: 200px;"
+                            src="https://dummyimage.com/640x360/fff/aaa" class="img-fluid H-50% W-50%" alt="image">
+                        </a>
+                        <% } %>
+                          <br>
+                          <div class="card-body">
+                            <h6 class="card-title court">
+                              <a href="/ZoomPost/<%= post.id %>">
+                                <%= post.texte %>
+                              </a>
+                            </h6>
+                          </div>
+                          <hr width="100%">
+                          <div class="ICO">
+                            <form action="/like/post/<%= post.id %>" method="post" id="IDLIKE">
+                              <button id="coeur"> <i class="fa fa-thumbs-up " style="font-size: 20px"></i></button>
+                            </form>
+                            <p>
+                              <%= post.likesCount %>
+                            </p>
+                            <form action="/unlike/post/ <%= post.id %>" method="post" id="IDDISLIKE">
+                              <button> <i class="fa fa-thumbs-down" style="font-size: 20px"></i></button>
+                            </form>
+                          </div>
+                          <hr width="100%">
+                          <div class="mileu" role="alert">
+                            <div class="ide">
+                              <i class='fas fa-user-alt' style="font-size: 20px; color: red"></i> &nbsp;
+                              <%= user.nom %>
+                                <%= user.prenom %>
+                            </div>
+                          </div>
+                          <br>
+                  </div>
+                </div>
+                <% } %>
+                  <% } ) %>
+                    <% } ) %>
+        </div>
+      </div>
+    </main>
+    </body>
+    </html>
