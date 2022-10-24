@@ -1,4 +1,4 @@
-<!-- <%- include('./includes/header.ejs') %> -->
+
 <%- include('./includes/Nouveau.ejs') %>
   <% console.log(locals); %>
     <main class="container">
@@ -20,7 +20,7 @@
                               <%= post.texte %>
                             </h5>
                           </div>
-                          <form action="/profil/put/<%= post.id %>" method="post" class=" textA">
+                          <form action="/profil/put/<%= post.id %>" method="post" class=" textA" enctype="multipart/form-data">
                             <textarea name="texte" class="form-control " aria-label="Sizing example input"
                              aria-describedby="inputGroup-sizing-default" placeholder="Mettre votre message"  autofocus> Modifier le texte
                             </textarea>

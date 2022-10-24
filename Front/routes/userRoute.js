@@ -27,7 +27,6 @@ route.post('/new', postCtrlFront.addPost);
 route.get('/',postCtrlFront.getPostAll);
 
 const token = localStorage.getItem('token');
-//console.log('HELLLLO TOKEN ', token);
 
 //LOGIN
 route.get('/login', (req ,res) => {
@@ -51,16 +50,13 @@ res.render('../views/register')
 route.post('/register', userCtrlFront.addUser);
 
 
-
 //HOME
 route.get('/', userCtrlFront.getUserByToken, postCtrlFront.getPostAll);
 
 //Profil
 route.get('/profil', userCtrlFront.getUserByToken, postCtrlFront.getmyPostFront);
-
 route.get('/logout', userCtrlFront.logOut);
 
-// route.route('/profil/:id').post(userCtrlFront.getUserByToken, postCtrlFront.deletePostFront);
 
 // Delete post dans profil 
 route.route('/profil/DeletePost/:id').post( postCtrlFront.deletePostFront);
@@ -82,7 +78,6 @@ route.post('/profil/newpost', userCtrlFront.getUserByToken, postCtrlFront.addPos
 route.get('/profil/newpost', userCtrlFront.getUserByToken, postCtrlFront.showPageNewPost );
 
 // Afficher la page ADMIN
-// route.post('/admin', AdminCtrlFront.getAllUserFront);
 route.get('/admin', (req,res)=>{
     res.render('../views/admin')
 } );

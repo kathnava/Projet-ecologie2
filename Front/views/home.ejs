@@ -1,11 +1,11 @@
 
-<%- include('./includes/header.ejs') %>
+<%- include('./includes/headerold.ejs') %>
   <%console.log('----------recuperer dans home', locals.post.success) %>
     <main class="container">
       <div class="total">
         <div class="partie1">
-          <% locals.post.success.map( ( user)=> { %>
-            <% user.Posts.map( ( post)=> { %>
+          <% locals.post.success.map((user)=> { %>
+            <% user.Posts.map( (post)=> { %>
               <% if(post.userId===user.id) { %>
                 <div class="card-group">
                   <div id="largeur" class="card">

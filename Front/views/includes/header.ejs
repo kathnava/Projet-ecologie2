@@ -22,15 +22,21 @@
   <script src="https://kit.fontawesome.com/2354b8f8c3.js" crossorigin="anonymous"></script>
   <nav class="navbar navbar-expand-lg  navbar-light bg-light blocked" style="background-color: #EBE9E9;">
     <div class="container-fluid TORTUE">
-      <a class="navbar-brand" href="#">
-       <a href="login"> <img src="/img/TOR.png" alt="logo Tortue" width="40" height="34" id="aretirer"></a>
-      </a>
-      <a href="/login" id="ARETIRER1">
-        Login/ 
-      </a>
-      <a href="/register" id="ARETIRER1">
-        Register
-      </a>
+        <!-- <img src="/img/TOR.png" alt="logo Tortue" width="40" height="34" id="aretirer"> -->
+        <a class="navbar-brand" href="#">
+            <% if(locals.me){ %>
+            <% if(locals.me.error){ %>
+                <a href="login"> <img src="/img/TOR.png" alt="logo Tortue" width="40" height="34" id="aretirer" id="LogoKN"></a>
+         </a>
+                <a href="/login" id="ARETIRER1">
+                    Login  
+                  </a>
+                  <% } else { %>
+                    <a href="login"> <img src="/img/TOR.png" alt="logo Tortue" width="40" height="34" id="aretirer"></a>
+                  </a>
+                  
+                  <% } %>
+                  <% } %>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -55,7 +61,6 @@
                         </a>
                         <% } %>
                 </a>
-                
                 <ul class="dropdown-menu MenuRes" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="/profil/update" id="changerprofil"><i class='far fa-edit class1'
                     style="color:red"></i>&nbsp;&nbsp;Modifier Mon profile</a></li>
@@ -85,8 +90,6 @@
                   <% } %>
                   <% if (locals.me===undefined){ %>
                     <% console.log('----------regarde', locals.me) %>
-                      <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">Connectez-Vous</a>
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="/login"><span class="glyphicon"
                           style="color:red;">&#xe161;</span>&nbsp;&nbsp;Login</a></li>
@@ -97,5 +100,4 @@
           </li>
         </ul>
       </div>
-    </div>
   </nav>

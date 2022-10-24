@@ -487,6 +487,7 @@
     flex-direction: row;
     gap: 25px;
     margin-bottom: 25px;
+    /* margin-top: 10%; */
  
 }
 
@@ -748,7 +749,7 @@ button:hover{
 }
 
 #Commandes {
-    margin-top: 2%;
+    margin-top: 10%;
     align-items: center;
     text-align: center;
 }
@@ -965,6 +966,9 @@ a {
     margin-top: 3%;
 }
 
+
+
+
 @media screen and (max-width:1080px) and (min-width:768px) {
 
 .container {
@@ -1105,7 +1109,7 @@ H1 {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    margin-top: 20%;
+    margin-top: 10%;
    
     
 }
@@ -1236,13 +1240,13 @@ H1 {
     margin-top: 10%;
 }
 
-#aretirer {
+/* #aretirer {
     display: none;
 }
 
 #ARETIRER1 {
     display: none;
-}
+} */
 
 }
 
@@ -1454,7 +1458,7 @@ button, input, optgroup, select, textarea {
     width: 100%;
     justify-content: center;
     align-items: center;
-    /* margin-top: 25%; */
+    margin-top: 20%;
    
 }
 
@@ -1641,6 +1645,7 @@ button, input, optgroup, select, textarea {
 
 #Commandes {
     font-size: 20px;
+    margin-top: 20%;
 }
 
 .btn {
@@ -1721,7 +1726,7 @@ button, input, optgroup, select, textarea {
 }
 
 #form3 {
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 .ensembledepage {
@@ -1756,12 +1761,16 @@ button, input, optgroup, select, textarea {
     gap: 10%;
 }
 
-#aretirer {
+/* #aretirer {
     display: none;
-}
+} */
 
 /* #ARETIRER1 {
     display: none;
+} */
+
+/* .RESPON {
+    margin-right: 60%;
 } */
 
 }

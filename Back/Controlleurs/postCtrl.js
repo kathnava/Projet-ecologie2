@@ -182,21 +182,6 @@ module.exports = {
       })
   },
   
-  // getAllPosts: (req, res) => {
-  //   models.Post.findAll({
-  //     attributes: ['id', 'userId', 'texte', 'attachement','likesCount']
-  //   })
-  //     .then((posts) => {
-  //       res.status(200).json({ success: posts })
-  //       //res.render('home', {data : posts})
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //       res.status(400).json({ error: 'An error occurred' });
-  //     });
-  // },
-  
-
   getAllPosts: (req, res) => {
         models.User.findAll({
             include : [ 

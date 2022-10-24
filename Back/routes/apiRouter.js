@@ -17,7 +17,6 @@ apiRouter.route('/me/:id').get(userCtrl.getUserMe);
 apiRouter.route('/getUser/:id').get(userCtrl.getUser);
 apiRouter.route('/getAll').get(userCtrl.getAllUsers);
 apiRouter.route('/put').put(userCtrl.PutUser);
-// apiRouter.route('/delete/:id').delete(userCtrl.deleteUser);
 
 // Route Admin Supprime User
 apiRouter.route('/deleteUserByAdmin/:id').delete(AdminCtrl.deleteUserByAdmin);

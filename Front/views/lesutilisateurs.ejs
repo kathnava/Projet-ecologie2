@@ -30,22 +30,23 @@
                                 <td>
                                     <form action="/lesutilisateurs/<%= locals.user[i].id %>" method="post">
                                         <input type="hidden" name="_method" value="DELETE">
-                                        <button type="submit" class="btn btn-danger"onClick= 'return confirm("Voulez-vous vraiment supprimer cet utilisateur ?")'>Suppression</button>
+                                        <button type="submit" class="btn btn-danger"
+                                            onClick='return confirm("Voulez-vous vraiment supprimer cet utilisateur ?")'>Suppression</button>
                                     </form>
                                 </td>
                             </tr>
                             <% } %>
-                            
                     </tbody>
-                
                 </table>
                 <div>
-                    <a href="./profil"><button type="button" class="btn btn-primary btn-lg button1 btn5">Retour au Profil</button></a>
+                    <a href="./profil"><button type="button" class="btn btn-primary btn-lg button1 btn5">Retour au
+                            Profil</button></a>
                 </div>
                 <div>
-                    <a href="./admin"><i class='fas fa-arrow-circle-left' style='font-size:48px;color:red; margin-left: 10%'></a></i>
+                    <a href="./admin"><i class='fas fa-arrow-circle-left'
+                            style='font-size:48px;color:red; margin-left: 10%'></a></i>
                 </div>
             </div>
-            
-            <% } %>         
+
+            <% } %>
     </div>

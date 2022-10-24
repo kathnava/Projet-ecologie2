@@ -1,74 +1,37 @@
 <%- include('./includes/header.ejs') %>
-<script>
-  $(function(){
-    $("#but1").click(function() {
-      valid = true;
-      if($("#nom").val() == "") {
-        $("#nom").next(".error-message").fadeIn().text("Veuillez entrer votre nom")
-        // $("#exampleInputEmail1").next(".erreur-message").fadeIn().text("Veuillez saisir votre nom");
-        valid = false;
-      }
-      else if(!$("#prenom").val(). == "") {
-        $("#prenom").next(".erreur-message").fadeIn().text("Veuillez saisir prenom valide");
-        valid = false;
-      }
-      else {
-        $("#exampleInputEmail1").next(".erreur-message").fadeOut();
-      }
-      // if($("#exampleInputPassword1").val() == "") {
-      //   $("#exampleInputPassword1").next(".erreur-message").fadeIn().text("Veuillez saisir votre mot de passe");
-      //   valid = false;
-      // }
-      // else if(!$("#exampleInputPassword1").val().match(/^(?=.*?[A-Z]{1,})(?=(.*[a-z]){1,})(?=(.*[d]){1,}).{5,24}$/))  {
-      //   $("#exampleInputPassword1").next(".erreur-message").fadeOut();
-      //   valid = false;
-      // }
-      return valid;
-    });
-  });
-</script> 
-<div class="background">
-  <% if (locals.error){ %>
-    <div class="alert alert-danger">
-      <%= locals.error %>
-    </div>
-    <% } %>
-    
-      <main class="container">
-        <div class="row">
-          <!-- <div class="titrekn">
-          <h1>HELLO WOLRD</h1>
-          </div>
+  <div class="background">
+    <% if (locals.error){ %>
+      <div class="alert alert-danger">
+        <%= locals.error %>
+      </div>
+      <% } %>
+        <main class="container">
           <div class="row">
-            <figure class="textHome text-end divH1">
-              <figcaption class="blockquote-footer">
-                HELLO WORLD <cite title="Source Title">This is My Project</cite>
-                <br>
-                &nbsp;&nbsp;
-                <img src="../public/img/tortue.jpg" alt="" width="8%">
-              </figcaption>
-            </figure> -->
             <form action="/register" method="post">
               <div class="cadre">
                 <div class="row g-3 espaceFormulaire">
                   <div class="col">
                     <label for="inputFirstname" class="form-label label1">Nom</label>
-                    <input type="text" class="form-control" placeholder="First name" name="nom" aria-label="First name" id="nom" autofocus required>
+                    <input type="text" class="form-control" placeholder="First name" name="nom" aria-label="First name"
+                      id="nom" autofocus required>
                     <span id="nom" class="erreur-message">erreur</span>
                   </div>
                   <div class="col">
                     <label for="inputLastname" class="form-label label1">Prénom</label>
-                    <input type="text" class="form-control" placeholder="Last name" name="prenom" aria-label="Last name" id="prenom" autofocus required>
+                    <input type="text" class="form-control" placeholder="Last name" name="prenom" aria-label="Last name"
+                      id="prenom" autofocus required>
                     <div class="erreur-message">erreur</div>
                   </div>
                   <form class="row g-3">
                     <div class="col-md-3">
                       <label for="inputEmail4" class="form-label label1">Email</label>
-                      <input type="email" class="form-control" placeholder="E-mail" name="email" id="email" autofocus required>
+                      <input type="email" class="form-control" placeholder="E-mail" name="email" id="email" autofocus
+                        required>
                     </div>
                     <div class="col-md-3">
                       <label for="inputPassword4" class="form-label label1">Password</label>
-                      <input type="password" class="form-control" placeholder="Password" name="password" id="password" autofocus required>
+                      <input type="password" class="form-control" placeholder="Password" name="password" id="password"
+                        autofocus required>
                     </div>
                     <div class="col-12 divbut">
                       <button type="submit" class="btn btn-primary btn-lg" id="but1" autofocus>Enregistrer</button>
@@ -78,8 +41,8 @@
               </div>
             </form>
           </div>
-      </main>
-    </div>
-      </body>
+        </main>
+  </div>
+  </body>
 
-      </html>
+  </html>

@@ -1,4 +1,4 @@
-<!-- <%- include('./includes/header.ejs') %> -->
+
 <%- include('./includes/Nouveau.ejs') %>
   <main class="container">
     <div class="column">
@@ -8,7 +8,7 @@
             <% locals.post.success.reverse().map((post)=>{ %>
               <% if(post.userId===locals.me.id){ %>
                 <div class="card-group">
-                  <div id="largeur" class="card" style="width: 18rem">
+                  <div id="largeur" class="card">
                     <% if (post.attachement != ""){ %>
                        <img id="image" style=" border-radius: 10px; height: 200px;" src="/img/<%= post.attachement %>"  class="img-fluid H-50% W-50%" alt="image">
                     <% } else { %> 
