@@ -18,100 +18,85 @@
 </head>
 
 <body class="body">
-  <script type= "text/javascript" src="js/home.js"></script>
+  <script type="text/javascript" src="js/home.js"></script>
   <script src="https://kit.fontawesome.com/2354b8f8c3.js" crossorigin="anonymous"></script>
   <nav class="navbar navbar-expand-lg  navbar-light bg-light blocked" style="background-color: #EBE9E9;">
-    <div class="container-fluid TORTUE">
-      <!-- <a class="navbar-brand" href="#">
-       <a href="login"> <img src="/img/TOR.png" alt="logo Tortue" width="40" height="34" id="aretirer">
+    <a class="navbar-brand p-3" href="login"> <img src="/img/TOR.png" alt="logo Tortue" width="40" height="34"></a>
+    <% if(locals.me.error){ %>
       </a>
-      <a href="/login" id="ARETIRER1">
-        Login/ 
+      <a class="navbar-brand" href="/login" id="ARETIRER1" class="RESPON">
+        Login
       </a>
-      <a href="/register" id="ARETIRER1">
-        Register
-      </a> -->
-      <a class="navbar-brand" href="#">
-        <% if(locals.me){ %>
-        <% if(locals.me.error){ %>
-       <a href="login"> <img src="/img/TOR.png" alt="logo Tortue" width="40" height="34" id="aretirer" id="LogoKN"></a>
-      </a>
-      <a href="/login" id="ARETIRER1" class="RESPON">
-        Login  
-      </a>
-      <!-- <a href="/register" id="ARETIRER1">
-        Register
-      </a> -->
       <% } else { %>
-        <a href="login"> <img src="/img/TOR.png" alt="logo Tortue" width="40" height="34" id="aretirer"></a>
-      </a>
-      <% } %>
-      <% } %>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/" style="margin-left:50%;">Home</a>
-          </li>
-          <li class="nav-item dropdown ">
-            <% console.log('----------ici locals--------', locals) %>
-              <% if(locals.me){ %>
-                <% if(!locals.me.error){ %> 
-                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  <%= me.nom %>
-                    <%= me.prenom %> &nbsp;
-                      <i class='fas fa-user-alt' style="font-size: 20px; color: red"></i>
-                      <% if(me.isAdmin===true){ %>
-                        <a href="/admin">
-                          <p style="color: red">ADMIN</p>
-                        </a>
-                        <% } %>
-                </a>
-                
-                <ul class="dropdown-menu MenuRes" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="/profil/update" id="changerprofil"><i class='far fa-edit class1'
-                    style="color:red"></i>&nbsp;&nbsp;Modifier Mon profile</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="/profil/newpost" id="#"><i class="fa fa-send-o"
-                    style="color:red"></i>&nbsp;&nbsp;Poster un article</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="/profil" id="#"><i class='fas fa-book-open'
-                    style="color: red; padding:2px;"></i>&nbsp;&nbsp;Afficher tous mes posts</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="/profil/DeletePost" id="#"><i class='far fa-trash-alt'
-                    style="color: red;"></i>&nbsp;&nbsp;Supprimer un article</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="/logout" style="color: red;"> <i class='fas fa-sign-out-alt'
-                    style="color:red"></i>&nbsp;&nbsp;Déconnexion</a></li>
-                </ul>
-                <% } %> 
-                <% console.log('----------mardi toto', locals.me) %>
-                  <% } %>
-                  <% if (locals.me===undefined){ %>
-                    <% console.log('----------regarde', locals.me) %>
+        <a href="#"></a>
+        </a>
+        <% } %>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/" style="margin-left:50%;">Home</a>
+              </li>
+              <li class="nav-item dropdown ">
+                <% console.log('----------ici locals--------', locals) %>
+                  <% if(locals.me){ %>
+                    <% if(!locals.me.error){ %>
                       <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">Connectez-Vous</a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="/profil"><span class="glyphicon"
-                          style="color:red;">&#xe161;</span>&nbsp;&nbsp;Profil</a></li>
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <%= me.nom %>
+                          <%= me.prenom %> &nbsp;
+                            <i class='fas fa-user-alt' style="font-size: 20px; color: red"></i>
+                            <% if(me.isAdmin===true){ %>
+                              <a href="/admin">
+                                <p style="color: red">ADMIN</p>
+                              </a>
+                              <% } %>
+                      </a>
+
+                      <ul class="dropdown-menu MenuRes" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/profil/update" id="changerprofil"><i
+                              class='far fa-edit class1' style="color:red"></i>&nbsp;&nbsp;Modifier Mon profile</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="/profil/newpost" id="#"><i class="fa fa-send-o"
+                              style="color:red"></i>&nbsp;&nbsp;Poster un article</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="/profil" id="#"><i class='fas fa-book-open'
+                              style="color: red; padding:2px;"></i>&nbsp;&nbsp;Afficher tous mes posts</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="/profil/DeletePost" id="#"><i class='far fa-trash-alt'
+                              style="color: red;"></i>&nbsp;&nbsp;Supprimer un article</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="/logout" style="color: red;"> <i class='fas fa-sign-out-alt'
+                              style="color:red"></i>&nbsp;&nbsp;Déconnexion</a></li>
                       </ul>
                       <% } %>
-                      <% console.log('-----------------ICI LOCALS--------------------',locals); %> 
+                        <% console.log('----------mardi toto', locals.me) %>
+                          <% } %>
+                            <% if (locals.me===undefined){ %>
+                              <% console.log('----------regarde', locals.me) %>
+                                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                                  data-bs-toggle="dropdown" aria-expanded="false">Connectez-Vous</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <li><a class="dropdown-item" href="/profil"><span class="glyphicon"
+                                        style="color:red;">&#xe161;</span>&nbsp;&nbsp;Profil</a></li>
+                                </ul>
+                                <% } %>
+                                  <% console.log('-----------------ICI LOCALS--------------------',locals); %>
 
-          </li>
-        </ul>
-      </div>
-    </div>
+              </li>
+            </ul>
+          </div>
+          </div>
   </nav>

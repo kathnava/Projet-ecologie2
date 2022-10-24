@@ -7,9 +7,6 @@
     flex-wrap: wrap;
 }
 
-/* .partie1{
-    margin-top: 5%;
-} */
 
 .TORTUE {
     margin-left: 4%;
@@ -67,7 +64,6 @@
 }
 
 .background {
-    /* background-image: url('/img/nuage.jpg'); */
     background-color: #ccc;
 } 
 
@@ -147,7 +143,6 @@
 }
 
 .cadre {
-    /* background-color:#EBE9E9; */
     padding: 20px;
     border-radius: 10px;
     border: 5px;
@@ -184,7 +179,6 @@
 }
 
 .card-group {
-    /* border: 5px solid #ccc; */
     border-radius: 10px;
     box-shadow: #ccc;
     box-shadow: -8px 8px 20px -9px rgba(186,175,175,0.76);
@@ -218,13 +212,7 @@
     margin-left: 30px;
 }
 
-/* .container-fluid  {
-    margin-left: 200px;
-} */
 
-.btn btn-primary {
-    /* margin-left: 3px; */
-}
 
 .erreur-message {
     display: inline ;
@@ -245,10 +233,7 @@
   to {left: 200px;}
 }
 
-#test {
-    animation: glowing 5s infinite;
-    /* margin-left: 100px; */
-}
+
 @keyframes glowing {
     0% {
       background-color: #2ba805;
@@ -309,7 +294,7 @@
     background-color:#EBE9E9;
     border-radius: 5px;
     margin:5% 5% 8% 5%;
-    /* width: 40%; */
+   
 }
 
 
@@ -437,7 +422,6 @@
     width: 50%;
 }
 
-
 #Publier {
     background-color: #5A95EE;
     /* width: 13%; */
@@ -450,14 +434,6 @@
     margin-top: 1rem;
 }
 
-
-
-/* .album {
-    margin-top: 5%;
-} */
-
-/*le button pour modifier image*/
-
 #Publier1 {
     background-color: #5A95EE;
     width: 15%;
@@ -466,15 +442,10 @@
     border: none;
     font-size: 20px;
     vertical-align: middle;
-    /* padding: .375rem .75rem; */
 }
 
 .nom {
     margin-left: 20px;
-}
-
-.ide {
-    /* margin-left: 20px; */
 }
 
 .card-img-top {
@@ -487,15 +458,8 @@
     flex-direction: row;
     gap: 25px;
     margin-bottom: 25px;
-    /* margin-top: 10%; */
- 
-}
 
-/* .deux {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-} */
+}
 
 .col {
     width: 50%;
@@ -527,22 +491,11 @@
     margin-left: 100px;
 }
 
-
-.btn-group button {
-    background-color: #0d6efd; /* Green background */
-    border: 2px solid blue; /* Green border */
-    color: white; /* White text */
-    padding: 10px 24px; /* Some padding */
-    cursor: pointer; /* Pointer/hand icon */
-    width: 90%; /* Set a width if needed */
-    display: block; /* Make the buttons appear below each other */
-}
-    
+ 
 .btn-group button:not(:last-child) {
     border-bottom: none; /* Prevent double borders */
 }
-
-    
+ 
    
 .btn-group button:hover {
     background-color: #3e8e41;
@@ -556,10 +509,6 @@
     display: none;
 }
 
-/* #form3 {
-    display: none;
-   
-} */
 
 .album {
     display: flex;
@@ -569,12 +518,6 @@
 .navbar {
     width: 100%;
 }
-
-
-/* .container, .container-sm {
-    max-width: none; 
-} */
-
 
 .navbar-toggler {
     display: flex;
@@ -648,10 +591,6 @@
 }
 
 .MOPR {
-    /* margin-left: 450px;
-    margin-top: 200px;
-    background-image: url("requingeant.jpg");
-    border: #0d6efd 2px; */
     margin-top: 3rem;
     display: flex;
     flex-direction: row;
@@ -776,10 +715,6 @@ button:hover{
 .button2 {
     margin-top: 5%;
 }
-
-/* .encadre {
-    margin-left: 10%;
-} */
 
 .ajoutphotp {
     width: 90%;
@@ -915,10 +850,6 @@ a {
     gap: 10%;
 }
 
-/* .PP {
-    display: flex;
-    flex-direction: column;
-} */
 .butDelete {
     margin-bottom: 30%;
     text-align: center;
@@ -1100,6 +1031,7 @@ H1 {
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-top: 10%;
    
   
 }
@@ -1241,12 +1173,12 @@ H1 {
 }
 
 /* #aretirer {
-    display: none;
-}
-
-#ARETIRER1 {
-    display: none;
+    padding: 15px ;
 } */
+
+/* #ARETIRER1 {
+    display: none;
+} */ 
 
 }
 
@@ -1335,43 +1267,7 @@ H1 {
         /* display: inline-block; */
         width: 100%;
     }
-    /* .navbar-nav {
-        display: none;
-        position: absolute;
-        background-color: #f1f1f1;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-    }
-    .navbar-nav a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    }
-    .navbar-nava:hover {background-color: #ddd;}
-      
-    .container:hover .navbar-nav{display: block;}
-      
-    .container:hover .dropbtn {background-color: #3e8e41;} 
 
-
-
-.container, .container-sm {
-    max-width: none; 
-}  */
-
-/* .dropdown-content a {
-    display: none;
-}  
-
-.navbar-toggler{
-    display: inline-block; 
-} 
-
- #navbarNav {
-    display: inline-flex; 
-}  */
 
 
 .card img {
@@ -1761,17 +1657,7 @@ button, input, optgroup, select, textarea {
     gap: 10%;
 }
 
-/* #aretirer {
-    display: none;
-} */
 
-/* #ARETIRER1 {
-    display: none;
-} */
-
-/* .RESPON {
-    margin-right: 60%;
-} */
 
 }
 
